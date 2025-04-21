@@ -1,0 +1,2 @@
+[console_scripts]
+llmconfigcli = llmconfig.llmconfigcli:main

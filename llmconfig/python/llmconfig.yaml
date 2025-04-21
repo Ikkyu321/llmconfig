@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: llmconfig-sidecar
+spec:
+  containers:
+  - image: llmconfig:0.0.1
+    name: main-container
+    command: ["bash", "entrypoint.sh" ]
+    ports:
+      - containerPort: 8000
+        name: http
+    env:
+      - name: ETCD_HOSTS
+        value: "30.221.208.107:12379,30.221.208.107:22379,30.221.208.107:32379"
+
+  - image: inference:0.0.1
+    name: sidecar-container
+    command: [ "sh", "run.sh" ]
+  restartPolicy: Always
+
+
+

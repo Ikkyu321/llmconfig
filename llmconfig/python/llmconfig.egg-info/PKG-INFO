@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: llmconfig
+Version: 0.7.1
+Requires-Python: >=3.6
+Requires-Dist: boto3
+Requires-Dist: readerwriterlock
+Requires-Dist: gradio
+Dynamic: requires-dist
+Dynamic: requires-python

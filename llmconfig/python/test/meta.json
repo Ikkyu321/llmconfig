@@ -1,0 +1,14 @@
+{
+    "##task type": "image-det, image-cls, image-seg, llm-generate",
+    "taskType": "llm-generate",
+    "processorType": "py",
+    "etcdHosts": "30.221.208.208:12379,30.221.208.208:22379,30.221.208.208:32379",
+    "imageInferenceUrl": "http://30.222.48.181:8182/algorithm/image/detect",
+    "llmInferenceUrl": "http://120.77.24.185:8009/llm/generate",
+    "batchSize": 1,
+    "classes": [
+        "person",
+        "vehicle",
+        "bicycle"
+    ]
+}

@@ -1,0 +1,15 @@
+#numpy
+#Pillow
+#requests
+#urllib3
+boto3
+#fastapi>=0.83.0
+#pydantic>=1.2.0,<2.0.0
+#uvicorn[standard]
+
+readerwriterlock
+#etcd3
+# gradio==3.44.3
+gradio
+#protobuf==3.20.3
+
